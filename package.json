@@ -5,19 +5,21 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "test": "npm run build && mocha test/**/*.spec.js --exit"
   },
   "dependencies": {
     "babel": "^6.23.0",
     "babel-loader": "^7.1.1",
     "babel-preset-airbnb": "^1.0.1",
     "babel-register": "^6.4.3",
-    "chai": "^4.1.2",
+    "chai": "^4.3.4",
     "cross-spawn": "^5.1.0",
     "express": "^4.15.3",
     "file-loader": "^0.11.2",
     "lodash": "^4.15.0",
     "lodash-webpack-plugin": "^0.10.2",
+    "mocha": "^9.1.2",
     "morgan": "^1.8.1",
     "nightmare": "^3.0.1",
     "prop-types": "^15.5.10",
